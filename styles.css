@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+    font-weight: 400;
+}
+
+
+.header {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+
+}
+
+.header__abstract {
+    color: white;
+    font-size: 17px;
+    margin-right: auto;
+    padding-left: 50px;
+   
+}
+
+.header__btngroup--submit{
+    border-radius: 5px;
+    padding: 5px 10px;
+    padding-left: 10px;
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(48, 45, 45);
+    margin-left: auto;
+}
+
+.header__btngroup--signin{
+    border-radius: 5px;
+    background-color: 
+    #4C5FD5;
+    color: white;
+    padding: 5px 10px;
+  
+    
+}
+.header__btngroup {
+   padding-left: 20px;
+  margin-left: auto;
+    padding-right: 60px;
+    
+}
+
+.mainContainer {
+    max-width: 1000px;
+    margin: auto;
+}
+/* SEARCH */
+.search {
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 100px 20px;
+background-color: #dadbf1;
+}
+
+.search__title {}
+
+.search__wrapper {
+
+}
+.search__input {
+
+}
+
+.search__searchicon {
+
+}
