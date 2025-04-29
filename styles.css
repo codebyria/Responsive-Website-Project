@@ -189,7 +189,7 @@ width: 100%;
 }
 
 .faq__card-title {
-    font-weight:bolder;   
+    font-weight:bold;   
     padding-right: rem;
 }
 .faq__card-text {
@@ -203,47 +203,58 @@ width: 100%;
 
 .footer {
     background-color: black; 
-    padding: 100px 20px;
+    padding: 40px 20px 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
    
 }
 
 .footer__content {
     display: flex;
     margin: auto;
-    justify-content: space-between;
+    justify-content:flex-start;
+    align-items: flex-start;
+    gap: 9em;
     max-width: 1200px;
     width: 100%;
    flex-wrap: wrap;
-   position: relative;
+    position: relative;
 }
 
 .footer__column {
  /* max-width: 120px;
  width: 100%; */
- flex-grow: 1;
+flex: 0 0 auto;
+ display:flex;
+ flex-direction: column;
+ align-items: flex-start;
+ gap: .2rem;
 
 }
 
 .footer__link {
-    font-weight: lighter;
+    font-weight: light;
     font-size: 12px;
     color: white;
+    text-decoration: none;
     font-size: 10px;
+  
+
 }
 
 .footer__title {
-    font-weight: bolder;
+    font-weight: bold;
     color: white;
     font-size: 17px;
+    margin-bottom: .5rem;
 }
 .copyright {
     font-weight: bold;
     color: white;
     font-size: 14px;
-    position: absolute;
-    bottom: -8;
-    right: 0;
-
+   margin-top: 10rem;
 }
 
 .footer__copyright {
