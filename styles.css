@@ -81,6 +81,7 @@ html {
     font-family: sans-serif;
     width: 140px;
     max-width: 100%;
+    border: none;
     
 
 }
@@ -216,9 +217,8 @@ width: 100%;
    gap: 20px;
    list-style: none;
    font-size: 1rem;
-  
 
-}
+
 
 .faq__list-item {
     min-height: 8rem;
