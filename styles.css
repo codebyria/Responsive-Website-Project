@@ -13,9 +13,7 @@ html {
     background: black;
     width: 100%;
     max-width: 100%;
-   
-    
-
+    overflow-x: hidden;
 }
 .header__inner {
     display: flex;
@@ -78,8 +76,8 @@ html {
     line-height: 1;
     font-family: 'Inter', sans-serif;
     width: auto;
-    flex: 1 1 1.5rem;
-    min-width: 0;    
+    flex: 0 1 10.25rem; 
+    min-width: initial;   
     border: none;
   }
   .search__input-header::placeholder {
@@ -405,8 +403,229 @@ gap: .25rem;
   }
 
 
-  @media (max-width: 490px) {
-            .header {
+  @media (max-width: 440px) {
+           .header .header {
+                  width:100%;
+                  height: 55px;
+                  overflow-x: hidden;
+                    }
+          .header  .header__inner {
+                  display: flex;
+                  justify-content: flex-start; 
+                  padding-inline: 0.5rem;
+                  align-items: center;
+                  flex-wrap: wrap; 
+                  gap: .3rem;
+                  padding-bottom: 2rem;    
+        
+                              }
+   
+             .header .header__branding {
+                    display: flex;
+                    flex: 0 1 auto;   
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding-left: 0rem ; /* ✅ or even 0 if you want it flush */
+                    margin-left: 0;
+                    gap: 0.2rem;
+                    padding-top: .5rem;
+              
+                                }
+            .search__input-header,
+            .header__btngroup--submit,
+            .header__btngroup--signin {
+                        display: none;
+                        
+                                      }
+           .header .icon-abstract {
+                        height: 1.25rem;
+                        }
+             .header .header__abstract {
+                        font-size: .93rem;
+                    }
+             .header .header__abstract-helpcenter {
+                font-size: .93rem;
+         
+             }
+             .header__btngroup { 
+         
+             } 
+             .header__mobile-icons {
+                display: flex;
+                gap: .5rem;
+                margin-left: auto;
+                position: absolute; 
+                right:1rem;
+                top
+               
+              }
+              .header__btngroup {
+                display: none;
+              }
+              .icon-btn {
+                background: none;
+                border: none;
+                color: white;
+                font-size: 1.5rem;     adjust to taste 
+                cursor: pointer;
+                
+              }
+              
+                .header__mobile-icons,
+                .header__btngroup--submit,
+                .header__btngroup--signin {
+                flex: 0 0 auto;       /* fixed to their content size */
+                }
+                }
+                @media (max-width: 350px) {
+                  .header {
+              width:100%;
+              height: 48px;
+              overflow-x: hidden;
+          }
+                  .header__inner {
+              display: flex;
+              justify-content:space-around; 
+              align-items: center;
+  flex-wrap: wrap;
+  padding-left: 0.7rem;
+  padding-right: 1rem; /* Add some right space too */
+              /* align-items: center;
+              flex-wrap: wrap; 
+              gap: .3rem;
+              padding-left: .7rem;    
+              padding-bottom: 1rem;     */
+              
+          }
+         
+                  .header__branding {
+                  display: flex;
+                  flex: 0 1 auto;   
+                  align-items: center;
+                  margin-left: 0; 
+                  padding-left: 0;  
+                  gap: 0.2rem;      
+              }
+                  .search__input-header,
+                  .header__btngroup--submit,
+                  .header__btngroup--signin {
+                      display: none;
+                      
+                  }
+                  .icon-abstract {
+                   height: 1.5rem;
+                   }
+                   .header__abstract {
+                       font-size: .3rem;
+                   }
+                   .header__abstract-helpcenter {
+                      font-size: .3rem;
+               
+                   }
+                   .header__btngroup { 
+               
+                   } 
+                   .header__mobile-icons {
+                      display: flex;
+                      gap: .5rem;
+                      margin-left: auto;
+                      position: absolute;
+                      right: 1rem;
+                      top: 0.75rem;
+                      z-index: 999;
+                     
+                    }
+                    .header__btngroup {
+                      display: none;
+                    }
+                    .icon-btn {
+                      background: none;
+                      border: none;
+                      color: white;
+                      font-size: 1.5rem;     adjust to taste 
+                      cursor: pointer;
+                      
+                    }
+                    
+                      .header__mobile-icons,
+                      .header__btngroup--submit,
+                      .header__btngroup--signin {
+                      flex: 0 0 auto;       /* fixed to their content size */
+                      }
+                      }
+
+@media (max-width:750px){
+    .header {
+        width:100%;
+        height: 48px;
+    }
+            .header__inner {
+        display: flex;
+        justify-content: flex-start; 
+       
+        align-items: center;
+        flex-wrap: wrap; 
+        gap: 1rem;
+        padding-left: 1rem;    
+        padding-bottom: 1rem;    
+        
+    }
+   
+            .header__branding {
+            display: flex;
+            flex: 0 1 auto;   
+            align-items: center;
+            margin-left: 0; 
+            padding-left: 0;  
+            gap: 1rem;      
+        }
+            .search__input-header,
+            .header__btngroup--submit,
+            .header__btngroup--signin {
+                display: none;
+                
+            }
+            .icon-abstract {
+             height: 1.5rem;
+             }
+             .header__abstract {
+                 font-size: 1rem;
+             }
+             .header__abstract-helpcenter {
+                font-size: 1rem;
+         
+             }
+             .header__btngroup { 
+         
+             } 
+             .header__mobile-icons {
+                display: flex;
+                gap: .5rem;
+                margin-left: auto;
+                
+              }
+              .header__btngroup {
+                display: none;
+              }
+              .icon-btn {
+                background: none;
+                border: none;
+                color: white;
+                font-size: 1rem;     adjust to taste 
+                cursor: pointer;
+                
+              }
+              
+                .header__mobile-icons,
+                .header__btngroup--submit,
+                .header__btngroup--signin {
+                flex: 0 1 auto;       /* fixed to their content size */
+                }
+
+
+}
+@media (max-width:882px){
+    .header {
         width:100%;
         height: 48px;
     }
@@ -471,73 +690,12 @@ gap: .25rem;
                 .header__btngroup--signin {
                 flex: 0 0 auto;       /* fixed to their content size */
                 }
-                }
-
-@media (max-width:768px){
-                
-            .header__inner {
-                display: flex;
-                justify-content: flex-start; 
-            
-                align-items: center;
-                flex-wrap: wrap; 
-                gap: .3rem;
-            
-            }
-            .header__branding {
-                display: flex;
-                flex: 0 1 auto;   
-                align-items: center;
-                margin-left: 0; 
-                padding-left: 0;  
-                gap: 0.2rem;      
-            }
-            .search__input-header,
-            .header__btngroup--submit,
-            .header__btngroup--signin {
-                display: none;
-                
-            }
-            .icon-abstract {
-             height: 1.5rem;
-             }
-             .header__abstract {
-                 font-size: 1rem;
-             }
-             .header__abstract-helpcenter {
-                font-size: 1rem;
-         
-             }
-             .header__mobile-icons {
-                display: flex;
-                gap: 1rem;
-                margin-left: auto;
-              }
-              .header__btngroup {
-                display: none;
-              }
-              .icon-btn {
-                background: none;
-                border: none;
-                color: white;
-                font-size: 1.5rem;     adjust to taste 
-                cursor: pointer;
-                
-              }
-              
-                .header__mobile-icons,
-                .header__btngroup--submit,
-                .header__btngroup--signin {
-                flex: 0 0 auto;       /* fixed to their content size */
-                }
-         
-    
-
 
 
 }
+
    
-@media (min-width: 48rem) {
+@media (min-width: 1024px) {
     /* hide the toggles */
     .header__mobile-icons {
       display: none;
@@ -550,6 +708,36 @@ gap: .25rem;
   }
 }
 @media screen and (max-width: 600px) {
+    .header__btngroup {
+        display: none;
+      }
+    .header__btngroup {
+      flex-direction: column;
+      align-items: stretch; /* buttons go full width */
+      gap: 12px;
+    }
+  
+    .header__btn,
+    .search__input-header {
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+  @media screen and (min-width:350px) {
+    .search__title{
+       
+        font-weight:400;
+        font-size:2.5rem;
+        font-family: 'Inter', sans-serif;
+        padding-bottom: 10px;
+        
+    }
+   
+}
+@media screen and (max-width: 790px) {
+    .header__btngroup {
+        display: none;
+      }
     .header__btngroup {
       flex-direction: column;
       align-items: stretch; /* buttons go full width */
