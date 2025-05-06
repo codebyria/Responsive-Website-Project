@@ -158,7 +158,7 @@
 
 
                             /* SEARCH */
-                            .mainContainer {
+                            .search .mainContainer {
                                 zoom: 1;
                                 max-width: 100%;
                                 margin: auto; 
@@ -498,113 +498,139 @@
 /*                                                                                     MEDIA QUERIES 440PX                                         */
 
   @media (max-width: 440px) {
-           .header .header {
-                  width:100%;
-                  max-width: 100%;
-                  height: 50px;
-                  padding-top: 1.25rem;
-                  padding-bottom: 1.25rem;
-                  /* padding-block: 1.5rem;  */
-                  overflow-x: hidden;
-                    }
-          .header  .header__inner {
-                  display: flex;
-                  justify-content: flex-start; 
-                  padding-inline: 0.5rem;
-                  align-items: center;
-                  flex-wrap: wrap; 
-                  gap: .3rem;
-                  padding-bottom: 2rem;    
-        
-                              }
-   
-             .header .header__branding {
-                    display: flex;
-                    flex: 0 1 auto;   
-                    align-items: center;
-                    justify-content: flex-start;
-                    padding-left: 0rem ; /* ✅ or even 0 if you want it flush */
-                    margin-left: 0;
-                    gap: 0.2rem;
-                    padding-top: .10rem;
-              
-                                }
-            .search__input-header,
-            .header__btngroup--submit,
-            .header__btngroup--signin {
-                        display: none;
-                        
-                                      }
-           .header .icon-abstract {
-                        height: 1.50rem;
+    KD7K02EB7CZ1ZGG8.header {
+                      width:100%;
+                      max-width: 100%;
+                      height: 80px;
+                      padding-top: 1.25rem;
+                      padding-bottom: 1.25rem;
+                      /* padding-block: 1.5rem;  */
+                      overflow-x: hidden;
                         }
-             .header .header__abstract {
-                        font-size: .93rem;
-                    }
-             .header .header__abstract-helpcenter {
-                font-size: .93rem;
-         
-             }
 
-               .search__input-header,
-              .header__btngroup {
-                    max-width: 100%;
-                    overflow: hidden;
-                    flex-wrap: wrap;
-                  }
-
-             .header__btngroup { 
-         
-             } 
-             .header .header__mobile-icons {
-                display: flex;
-                gap: .5rem;
-                margin-left: auto;
-                position: absolute; 
-                right:1rem;
-                top: 0.5rem;
-               
+              .header  .header__inner {
+                      display: flex;
+                      justify-content: flex-start; 
+                      padding-inline: 0.5rem;
+                      align-items: center;
+                      flex-wrap: wrap; 
+                      gap: .3rem;
+                      padding-bottom: 2rem;    
               }
-              .icon-btn search-toggle {
-
-              }
-
-              .icon-btn menu-toggle{
-                
-              }
-              .header__btngroup {
-                display: none;
-              }
-            .header .icon-btn {
-                background: none;
-                border: none;
-                color: white;
-                font-size: 1.35rem;     adjust to taste 
-                cursor: pointer;
-                
-              }
-              
-                .header__mobile-icons,
-                .header__btngroup--submit,
-                .header__btngroup--signin {
-                flex: 0 0 auto;       /* fixed to their content size */
-                }
-                .mainContainer {
-                 
-                
-              }
-              .search {
-              height: 10.70rem;
-              padding: 6rem 1rem;
-              }
-                .mainContainer .search__title {
-                  font-size: 1.27rem;
+                                  
+      
+                .header .header__branding {
+                        display: flex;
+                        flex: 0 1 auto;   
+                        align-items: center;
+                        justify-content: flex-start;
+                        padding-left: 0rem ; /* ✅ or even 0 if you want it flush */
+                        margin-left: 0;
+                        gap: 0.2rem;
+                        padding-top: .10rem;
                   
-                
-                }
-               .search__input{ 
-                  padding: 7px 2px;
-                }
+                                    }
+                        .search__input-header,
+                        .header__btngroup--submit,
+                        .header__btngroup--signin {
+                                    display: none;
+                                    
+                                                  }
+                      .header .icon-abstract {
+                                    height: 1.50rem;
+                                    }
+                        .header .header__abstract {
+                                    font-size: .93rem;
+                                }
+                        .header .header__abstract-helpcenter {
+                            font-size: .93rem;
+                    
+                        }
+
+
+                        .header__btngroup { 
+                    
+                        } 
+                        .header .header__mobile-icons {
+                            display: flex;
+                            gap: .5rem;
+                            margin-left: auto;
+                            position: absolute; 
+                            right:1rem;
+                            top: 0.5rem;
+                          
+                          }
+                          .icon-btn search-toggle {
+
+                          }
+
+                          .icon-btn menu-toggle{
+                            
+                          }
+                          .header__btngroup {
+                            display: none;
+                          }
+                        .header .icon-btn {
+                            background: none;
+                            border: none;
+                            color: white;
+                            font-size: 1.35rem;     adjust to taste 
+                            cursor: pointer;
+                            
+                          }
+                          
+                            .header__mobile-icons,
+                            .header__btngroup--submit,
+                            .header__btngroup--signin {
+                            flex: 0 0 auto;       /* fixed to their content size */
+                            }
+                            .mainContainer {
+                            
+                            
+                          }
+                          .mainContainer .search {
+                            padding: 4rem 0; /* vertical padding only */
+                          }
+                          .mainContainer .search__title {
+                            font-size: 1.5rem;  /* or 1.75rem if you want it a little bigger */
+                            text-align: center;
+                            padding: 0 1rem;     /* optional: helps prevent overflow */
+                          }
+                          
+                          .search__input-header,
+                          .header__btngroup {
+                                max-width: 100%;
+                                overflow: hidden;
+                                flex-wrap: wrap;
+                              }
+                        
+                        
+                          .mainContainer .search__wrapper {
+                            display: flex;
+                            align-items: center;
+                            gap: 0; /* or adjust if needed */
+                            padding: 0 1rem; /* ⬅️ gives both sides breathing room */
+                            width: 100%;
+                            box-sizing: border-box; /* ⬅️ ensures padding doesn’t overflow */
+                          }
+                        
+                          .mainContainer .search__input {
+                            flex: 1;
+                            padding: 0.6rem 0.75rem;
+                            font-size: 1rem;
+                            border-radius: 0.5rem 0 0 0.5rem;
+                            border: 1px solid #ccc;
+                          }
+                        
+                          .mainContainer .search__searchicon {
+                            padding: 0.6rem 1rem;
+                            background: white;
+                            border: 1px solid #ccc;
+                            border-left: none;
+                            border-radius: 0 0.5rem 0.5rem 0;
+                            font-size: 1rem;
+                          }
+            }
 
 
 /*                                       */
