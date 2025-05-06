@@ -189,7 +189,8 @@
                                 margin: 0 auto;
                                 padding: 15px 20px;
                                 font-size: 2.67rem;
-                                font-weight: 600;
+                                font-weight: 400;
+                                margin-bottom: .5rem; 
                                 
                             }  
 
@@ -216,7 +217,15 @@
                                 right: 15px;
                                 font-size: 18px;
                                 pointer-events: none;
+
+                                
                             }
+
+
+                            .search__input::placeholder {
+                                  font-size: .87rem;
+                            }
+
 
                                                                                                 /* FAQ CARDS */
                             .faq {
@@ -256,6 +265,9 @@
                                 opacity: 85%;
                                 gap: 1rem; 
                                 padding-right: .5rem;
+                                 
+                                margin: 0 auto;
+                                padding: 0;
                                 
                             }
 
@@ -589,6 +601,7 @@
                             
                           }
                           .mainContainer .search {
+                           height: 140px;
                             padding: 3.5rem 0; /* vertical padding only */
                           }
                           .mainContainer .search__title {
@@ -610,10 +623,12 @@
                           .mainContainer .search__wrapper {
                             display: flex;
                             align-items: center;
-                            gap: 0; /* or adjust if needed */
-                            padding: 0 1rem; /* ⬅️ gives both sides breathing room */
+                            justify-content: center;
+                            margin: 0 auto;
+                            padding: 0 2rem;
+                            max-width: 25rem; /* adjust based on preference */
                             width: 100%;
-                            box-sizing: border-box; /* ⬅️ ensures padding doesn’t overflow */
+                           box-sizing: border-box; 
                           }
                         
                           .mainContainer .search__input {
@@ -632,7 +647,49 @@
                             border-radius: 0 0.5rem 0.5rem 0;
                             font-size: 1rem;
                           }
-            }
+
+                           .search__searchicon { 
+                          
+                          }
+                          .search__input::placeholder {
+                            font-size: .67rem;
+                          }
+                          .faq {
+                            padding: 2rem 1rem;
+                            align-items: flex-start; /* push content to the left */
+                          }
+                          .faq__list {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2rem;
+                            padding: 0;
+                            margin: 0 auto;
+                            align-items: flex-start; /* key: align text block left */
+                            width: 100%;
+                            max-width: 28rem; /* or ~90% of viewport if you prefer */
+                          }
+                          .faq__list-item {
+                            display: flex;
+                            align-items: flex-start;
+                            width: 100%;
+                            max-width: 24rem;
+                            padding: 0 1rem;
+                            box-sizing: border-box;
+                            gap: 1rem;
+                          }
+                          .faq__Card {
+                            flex: 1;
+                            max-width: 20rem;
+                            text-align: left;
+                          }
+                          .faq__card-title { 
+                            font-size: 1rem;
+                          }
+                          
+                          .faq__card-text { 
+                            font-size: .80rem;
+                          }
+                          
 
 
 /*                                       */
