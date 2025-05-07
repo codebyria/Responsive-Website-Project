@@ -6,6 +6,7 @@
                                 padding: 0;
                                 font-family: 'Inter', sans-serif;
                                 font-weight: 400;
+                                
                             }
                             body {
                               overflow-x: hidden;
@@ -162,7 +163,7 @@
                                 zoom: 1;
                                 max-width: 100%;
                                 margin: auto; 
-                              displaY:flex;
+                              displa:flex;
                               flex-direction: column;
                               align-items: center;
                               
@@ -597,12 +598,29 @@
                             flex: 0 0 auto;       /* fixed to their content size */
                             }
                             .mainContainer {
+                              padding: 0 1rem;
+                              min-height: 60vh; /* Takes up 60% of viewport height */
+                              box-sizing: border-box;
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: flex-start; /* or center, depending on design */
+                              width: 100%;
+                              padding: 0;
+                              margin: 0;
                             
+                            }
                             
-                          }
                           .mainContainer .search {
-                           height: 140px;
-                            padding: 3.5rem 0; /* vertical padding only */
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: #dadbf1;
+                            width: 100%;
+                            min-height: 10rem; 
+                            padding: 3.5rem 1.5rem;
+                            height: auto;
+                            text-align: center;/* vertical padding only */
                           }
                           .mainContainer .search__title {
                             font-size: 1.35rem;  /* or 1.75rem if you want it a little bigger */
@@ -625,36 +643,35 @@
                                 justify-content: center;
                                 align-items: center;
                                 margin: 0 auto;
-                                padding: 0 1rem;
+                                padding: 0 1.5rem;         /* ⬅️ Increased from 1rem to 1.5rem */
                                 width: 100%;
                                 max-width: 25rem;
                                 box-sizing: border-box;
-                                padding: 1 1.7rem  1rem;
-                              }
+                                position: relative; 
+                                padding-right: 2.5rem; /* Leave room for the icon */
+
+                                                            }
                               
                         
                               .mainContainer .search__input {
                                 width: 100%;
                                 padding: 0.6rem 0.75rem;
                                 font-size: 1rem;
-                                border: 1px solid #ccc;
+                                padding-right: 2.5rem; /* Leave room for the icon */
+                                padding-left: 1rem;    /* Reduce this if it feels too far from the left */
                                 border-radius: 0.5rem;
                                 box-sizing: border-box;
+                                border: 1px solid black;
                               }
                               
                               
                               .mainContainer .search__searchicon {
                                 position: absolute;
-                                right: 2.20rem;
+                                right: 3.0rem;
                                 font-size: 1.1rem;
                                 pointer-events: none;
                               }
-                              .search__wrapper {
-                                position: relative;
-                              }
-                           .search__searchicon { 
-                          
-                          }
+                             
                           .search__input::placeholder {
                             font-size: .67rem;
                           }
