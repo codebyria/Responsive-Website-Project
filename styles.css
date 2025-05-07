@@ -736,8 +736,8 @@
                                                 
                           .footer__content {
                             display: grid;
-                            grid-template-columns: repeat(2, 1fr); /* two columns */
-                            gap: 1.5rem 1rem; /* row and column gap */
+                            grid-template-columns: repeat(2, minmax(0, 1fr)); /* two columns */
+                            gap: .25rem .25rem;/* row and column gap */
                             margin: 0 auto;
                             padding: 0 1rem;
                             width: 100%;
