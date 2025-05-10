@@ -421,92 +421,15 @@
                               .help-button:hover {
                                 background-color: #3a4bc0;
                               }
-                              @media (max-width: 48rem) {
+                               @media (max-width: 48rem) {
                                 .help-button {
                                   bottom: 1rem;
                                   right: 1rem;
                                   padding: 0.5rem 1.2rem;
                                   font-size: 0.75rem;
                                 }
-                              }
+                              } 
                             /*                                                                                     MEDIA QUERIES 350PX+                                         */
-
-                              @media (max-width: 350px) {
-                                .header {
-                            width:100%;
-                            height: 48px;
-                            overflow-x: hidden;
-                            }
-                                .header__inner {
-                            display: flex;
-                            justify-content:space-around; 
-                            align-items: center;
-                            flex-wrap: wrap;
-                                  /* padding-left: 0.7rem; */
-                                  padding-right: 1rem; /* Add some right space too */
-                                              /* align-items: center;
-                                              flex-wrap: wrap; 
-                                              gap: .3rem;
-                                              padding-left: .7rem;    
-                                              padding-bottom: 1rem;     */
-                                              
-                                          }
-
-                .header__branding {
-                display: flex;
-                flex: 0 1 auto;   
-                align-items: center;
-                margin-left: 0; 
-                padding-left: 0;  
-                gap: 0.2rem;      
-            }
-                .search__input-header,
-                .header__btngroup--submit,
-                .header__btngroup--signin {
-                    display: none;
-                    
-                }
-                .icon-abstract {
-                height: 1.5rem;
-                }
-                .header__abstract {
-                    font-size: .3rem;
-                }
-                .header__abstract-helpcenter {
-                    font-size: .3rem;
-            
-                }
-                .header__btngroup { 
-            
-                } 
-                .header__mobile-icons {
-                    display: flex;
-                    gap: .5rem;
-                    margin-left: auto;
-                    position: absolute;
-                    right: 1rem;
-                    top: 0.75rem;
-                    z-index: 999;
-                  
-                  }
-                  .header__btngroup {
-                    display: none;
-                  }
-                  .icon-btn {
-                    background: none;
-                    border: none;
-                    color: white;
-                    font-size: 1.5rem;     adjust to taste 
-                    cursor: pointer;
-                    
-                  }
-                  
-                    .header__mobile-icons,
-                    .header__btngroup--submit,
-                    .header__btngroup--signin {
-                    flex: 0 0 auto;       /* fixed to their content size */
-                    }
-                    }
 
 /*                                                                                     MEDIA QUERIES 440PX                                         */
                  @media (max-width: 768px) {   
@@ -526,7 +449,7 @@
                       align-items: center;
                       flex-wrap: wrap; 
                       gap: .3rem;
-                      padding-bottom: 2rem;    
+                     
               }
                                   
       
