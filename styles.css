@@ -846,13 +846,13 @@ grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     letter-spacing: -.19rem;
-      margin-bottom: 1rem; /* reduce this further if needed */
+    margin-bottom: 0.5rem;  /* reduce this further if needed */
     padding: 0.5rem 0;     /* reduce top and bottom padding */
     padding-right: 1rem;
   }
  .mainContainer .search {
   padding-top: 1.4rem;
-  padding-bottom: 1rem ;
+  padding-bottom: rem ;
   height: auto;
   
 }
@@ -864,9 +864,10 @@ grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
     width: 100%;
     max-width: 30rem;
     margin: 0 auto;
+    margin-top: -2rem;
     padding: 2 1rem;
     padding-right: 3rem;
-    padding-bottom: 33em;
+    padding-bottom: 2rem;
     box-sizing: border-box;
   }
   .mainContainer .search__input {
@@ -881,8 +882,8 @@ grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
   }
   .mainContainer .search__searchicon {
   position: absolute;
-    right:3.5rem;                      /* balanced with left padding */
-    top: 25%;
+    right:3.9rem;                      /* balanced with left padding */
+    top: 33%;
     transform: translateY(-50%);
     font-size: 1.4rem;
     pointer-events: none;
