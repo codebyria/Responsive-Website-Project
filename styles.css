@@ -840,6 +840,10 @@ grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
 }
 
 @media (max-width: 499px)  {
+  body {
+  overflow-x: hidden;
+}
+
  .mainContainer .search__title {
     font-size: 2.3rem ;
     line-height: 4;
@@ -895,5 +899,108 @@ grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
         font-size: 1rem;
   }
 
+
+  .faq__card-title {
+    font-size: 1.3rem;
+    font-weight: 900;
+  }
+  .faq__card-text {
+    font-size: 1.1rem;
+  }
+  .faq__card-link {
+    font-size: 1rem;
+  }
+  .footer {
+  padding: 2rem 1rem;
+   max-width: 640px;
+  margin: 0 auto;
+}
+    .footer__content {
+    display: grid;
+     grid-template-columns: repeat(2, minmax(140px, 1fr));
+   gap: 2.5rem 3rem; /* rows x columns gap */
+    margin: 0;
+   padding-left: 1rem;
+  padding-right: 1rem;      /* keeps breathing room */
+    margin-left: 0;           /* override any centering */
+    gap: 2rem;                /* reduce space between columns */
+  justify-content: flex-start;
+  
+    text-align: left;
+
+  }
+
+  .footer__column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+
+    gap: .3rem;
+  }
+.footer__title,
+.footer__title-contact {
+  font-size: 24px;
+  font-weight: 900; /* drop from 900 */
+  margin-bottom: .7rem;
+}
+.footer__link {
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.footer__logo {
+  margin: 1rem 0 0 0;
+  font-size: 1rem;
+}
+.footer__copyright { 
+font-size: .9rem;
+}
+
+.copyright {
+  margin-top: 1rem;
+  
+  padding-left: 2rem;
+}
+  .footer__bottom,
+  .copyright {
+    padding-top: 2rem;
+    text-align: left;
+       margin-left: 0;           /* align copyright left */
+   align-items: flex-start;  /* makes content hug the left */
+    padding-left: 0;
+    font-size: 1rem;
+  }
+  .help-button {
+      position: fixed;          /* float above all content */
+      bottom: .75rem;             /* 2rem up from the bottom of the viewport */
+      right: .75rem;              /* 2rem in from the right edge */
+      z-index: 9999;            /* ensure it sits above everything */
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.58rem 1rem;
+      border-radius: 2rem;
+      background-color: #4C5FD5;
+      color: white;
+      font-size: 1.1rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 0.125rem 0.375rem rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+      white-space: nowrap;
+    }
+    .help-button:hover {
+      background-color: #3a4bc0;
+    }
+   .help-button span {
+  /* styles here only affect the word "Help" */
+  font-weight: bold;
+  color: white;
+  font-size: 1.2rem;
+}
 }
 /* STYLES FOR 499PX OR LESS */
