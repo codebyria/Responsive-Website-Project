@@ -338,29 +338,30 @@ html {
       align-items: center;
       position: relative;
       width: 100%;
-      max-width: 30rem;
+      max-width:40rem;
       margin: 0 auto;
       margin-top: -2rem;
       box-sizing: border-box;
       padding: 0 1.25rem; /* FIXED shorthand syntax */
-      padding-right: 3rem; /* Optional */
+      padding-right: 4rem ; /* Optional */
       padding-bottom: 2rem;
   }
 .mainContainer .search__input {
     padding: 1.2rem 2.9rem 1.2rem 1.2rem;  /* reduced right padding */
     font-size: 1rem;
     width: 100%;
+    max-width: 65%;
     border-radius: 0.3rem;
     border: 1px solid black;
     box-sizing: border-box;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     padding-right: 4rem ;
 
   }
 
   .search__searchicon {
       position: absolute;
-      right: 15px;
+      right: 12.9rem !important;
       font-size: 18px;
       pointer-events: none;
 
@@ -874,27 +875,29 @@ grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
       align-items: center;
       position: relative;
       width: 100%;
-      max-width: 30rem;
+      max-width:none;
       margin: 0 auto;
       margin-top: -2rem;
-      box-sizing: border-box;
-      padding: 0 1.25rem; /* FIXED shorthand syntax */
-      padding-right: 3rem; /* Optional */
+    box-sizing: border-box;
+      padding: 0 .15rem; /* FIXED shorthand syntax */
+      padding-right: 2.7rem;
       padding-bottom: 2rem;
   }
   .mainContainer .search__input {
-    padding: 1.2rem 2.5rem 1.2rem 1.2rem;  /* reduced right padding */
+    padding: 1.2rem 2.9rem 1.2rem 1.2rem;  /* reduced right padding */
     font-size: 1rem;
+    max-width: 85%;
     width: 100%;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
     border: 1px solid black;
     box-sizing: border-box;
-    padding-bottom: 1.4rem;
+    padding-bottom: 1rem;
+    padding-right: 4rem ;
 
   }
   .mainContainer .search__searchicon {
   position: absolute;
-    right:3.9rem;                      /* balanced with left padding */
+    right:7.5rem;                      /* balanced with left padding */
     top: 33%;
     transform: translateY(-50%);
     font-size: 1.4rem;
@@ -906,7 +909,6 @@ grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
 .search__input::placeholder {
         font-size: 1rem;
   }
- 
 .faq__Card {
   flex: 1;
   width: 100%;
@@ -1091,6 +1093,7 @@ font-size: .9rem;
   .mainContainer .search__input {
     padding: 1.2rem 2.9rem 1.2rem 1.2rem;  /* reduced right padding */
     font-size: 1rem;
+    max-width: 85%;
     width: 100%;
     border-radius: 0.3rem;
     border: 1px solid black;
@@ -1101,7 +1104,7 @@ font-size: .9rem;
   }
   .mainContainer .search__searchicon {
   position: absolute;
-    right:3.9rem;                      /* balanced with left padding */
+    right:7.2rem;                      /* balanced with left padding */
     top: 33%;
     transform: translateY(-50%);
     font-size: 1.4rem;
@@ -1282,7 +1285,7 @@ font-size: 1.3rem;
       align-items: center;
       position: relative;
       width: 100%;
-      max-width:none;
+      max-width:80%;
       margin: 0 auto;
       margin-top: -2rem;
       box-sizing: border-box;
@@ -1294,6 +1297,7 @@ font-size: 1.3rem;
     padding: 1.2rem 2.9rem 1.2rem 1.2rem;  /* reduced right padding */
     font-size: 1rem;
     width: 100%;
+    max-width: 85%;
     border-radius: 0.3rem;
     border: 1px solid black;
     box-sizing: border-box;
@@ -1303,7 +1307,7 @@ font-size: 1.3rem;
   }
   .mainContainer .search__searchicon {
   position: absolute;
-    right:3.9rem;                      /* balanced with left padding */
+    right:6.1rem;                      /* balanced with left padding */
     top: 33%;
     transform: translateY(-50%);
     font-size: 1.4rem;
@@ -1317,75 +1321,84 @@ font-size: 1.3rem;
   }
  }
 
-    @media (min-width: 926px) and (max-width: 1600px) {
+    @media (min-width: 926px) and (max-width: 1920px) {
   body {
   overflow-x: hidden;
+  
 }
  
 
 .mainContainer {
   width: 100%;
   max-width: 100%;
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
  .mainContainer .search__title {
-    font-size: 3.2rem ;
+    font-size: 2.8rem ;
     line-height: 3.1;
     font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    letter-spacing: -.35rem;
+    font-weight: 200;
+    letter-spacing: -.15rem;
     margin-bottom: 0.5rem;  /* reduce this further if needed */
     padding: 0.5rem 0;     /* reduce top and bottom padding */
-    padding-right: 1rem;
+    padding-right: .2rem;
   }
  .mainContainer .search {
+
+    zoom: 1;
   padding-top: 1.4rem;
   padding-bottom: rem ;
   height: auto;
   
 }
-.mainContainer .search__wrapper {
+.search__wrapper {
      display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
       width: 100%;
-      max-width: 30rem;
+      max-width:40rem;
       margin: 0 auto;
       margin-top: -2rem;
-box-sizing: border-box;
+      box-sizing: border-box;
       padding: 0 1.25rem; /* FIXED shorthand syntax */
-      padding-right: 3rem; /* Optional */
+      padding-right: 4rem ; /* Optional */
       padding-bottom: 2rem;
   }
-  .mainContainer .search__input {
+.mainContainer .search__input {
     padding: 1.2rem 2.5rem 1.2rem 1.2rem;  /* reduced right padding */
     font-size: 1rem;
     width: 100%;
-    border-radius: 0.2rem;
+    max-width: 87%;
+    border-radius: 0.3rem;
     border: 1px solid black;
     box-sizing: border-box;
-    padding-bottom: 1.4rem;
+    padding-bottom: .5rem;
+    padding-right: 1rem  ;
+    padding-top: 1rem;
 
   }
-  .mainContainer .search__searchicon {
-  position: absolute;
-    right:3.9rem;                      /* balanced with left padding */
-    top: 33%;
-    transform: translateY(-50%);
-    font-size: 1.4rem;
-    pointer-events: none;
-    color: black;
-    display: flex;
-    align-items: center;
-}
-.search__input::placeholder {
-        font-size: 1rem;
+
+  .search__searchicon {
+      position: absolute;
+      right: 7.2rem !important;
+      font-size: 18px;
+      pointer-events: none;
+
+      
   }
-  .header__mobile-icons {
-display: none;
-}
-}
+  .header__mobile-icons { 
+    display: none;
+  }
+
+
+  .search__input::placeholder {
+        font-size: .87rem;
+        -bottom: .9rem;
+  }
+
+}padding
